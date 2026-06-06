@@ -1,27 +1,38 @@
-# Minimal Typographic Portfolio
+# Mohit Rana Portfolio
 
-An ultra-clean, space-optimized, typography-first developer portfolio. Built using pure semantic HTML, vanilla CSS, and lightweight JavaScript with a focus on functional simplicity, performance, and keypress micro-interactions.
+A minimalist developer portfolio for Mohit Rana, Associate Software Engineer specializing in LLMs, RAG, semantic search, and cloud infrastructure. This project is built with semantic HTML, vanilla CSS, and lightweight JavaScript to keep the experience fast, accessible, and interaction-driven.
+
+## Overview
+
+- Personal landing page presenting professional summary, experience, technical expertise, selected projects, and a small interactive game.
+- Designed for quick scanning with clear sections, keyboard shortcuts, and subtle animation.
+- Includes clipboard copy actions and a theme toggle with persistence across sessions.
 
 ## Features
 
-- **Typography-First Layout**: Clean grids and minimal borders inspired by modern developer documentation sites.
-- **Robust Theme Toggle**: Instant, system-preference-fallback theme engine with zero-flash rendering.
-- **Micro-interactions**: Interactive hover underlines, scroll-triggered fade-ins, and animated SVGs (email flap, wiggling GitHub cat, and a spinning fake-3D globe).
-- **Clipboard Helpers**: One-click clipboard actions for email and the custom CLI `npx prasanna` card.
-- **Keyboard Shortcuts**: Fully responsive, keyboard-navigable page shortcuts accompanied by contrast-aware toast alerts.
+- **Professional portfolio layout** with sections for Thought Stream, Experience, Skills, and Projects.
+- **Theme toggle** using `localStorage` and `data-theme` to preserve user preference.
+- **Clipboard actions** for copying email and a custom `npx mohit` command.
+- **Keyboard shortcuts** for accessibility and fast navigation.
+- **Live IST clock** displaying the current time in India.
+- **Interactive game panel** hidden by default and activated via shortcut.
+- **Toast notifications** for user feedback on actions.
 
 ## File Structure
 
-- `index.html` — Semantic markup, inline flash-prevention theme handler, and structure.
-- `styles.css` — Custom CSS variables, CSS keyframes, grid/flex layouts, and toast system styling.
-- `script.js` — Intersection observers, scroll tracking, copy listeners, and the toast DOM injector.
+- `index.html` — Main landing page markup and content sections.
+- `styles.css` — Styling for layout, theme variables, animations, and responsive design.
+- `script.js` — Theme handling, keyboard shortcuts, clipboard copy actions, clock updates, toast notifications, and game logic.
+- `README.md` — Project documentation.
 
-## Keyboard Hotkeys
+## Keyboard Shortcuts
 
-- <kbd>t</kbd> — Toggle theme mode (Light / Dark).
-- <kbd>e</kbd> — Copy email to clipboard.
-- <kbd>c</kbd> — Copy `npx` card to clipboard.
-- <kbd>g</kbd> — Open GitHub page.
+- <kbd>t</kbd> — Toggle theme mode.
+- <kbd>e</kbd> — Copy email address to clipboard.
+- <kbd>c</kbd> — Copy `npx mohit` to clipboard.
 - <kbd>l</kbd> — Open LinkedIn profile.
-- <kbd>p</kbd> — Navigate to main website (`prasanna19.xyz`).
-- <kbd>k</kbd> — Expand/collapse Bug Runner (dino-style typographic game).
+- <kbd>k</kbd> — Toggle the hidden interactive game panel.
+
+## Usage
+
+Open `index.html` in a browser to view the portfolio locally. The page is self-contained and does not require a build step.
